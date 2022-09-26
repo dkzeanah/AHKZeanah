@@ -12,8 +12,17 @@
 hammer := new inventory("hammer")
 hammer.savestatus()
 
+<<<<<<< Updated upstream
 ^1::
 hammer.input()
+=======
+1::
+hammer.input()
+return
+;hammer.savestatus()
+
+
+>>>>>>> Stashed changes
 return
 
 
@@ -55,6 +64,7 @@ class inventory {
         FileDelete, % this.filePath
         FileAppend, % string, % this.filePath
     }
+<<<<<<< Updated upstream
     input(){ ;method to add object values via inputbox
         InputBox, inp
         if inp = ""
@@ -66,4 +76,11 @@ class inventory {
  
     }
 }
+=======
+    input(){
+        InputBox, inp
+        this.stock += inp 
+        this.saveStatus()
+    }
+>>>>>>> Stashed changes
 }
