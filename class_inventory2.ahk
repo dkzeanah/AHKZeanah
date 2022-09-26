@@ -1,20 +1,23 @@
-#Include P:\app\app\json\json\export.ahk
+#Include class/class_json.ahk
 ;#include export.ahk
 
-screwdriver := new inventory("screwdriver", "small tool", 2)
-screwdriver.addItems(100)
-screwdriver.addItems(66)
-screwdriver.addItems(10)
-screwdriver.saveStatus()
+; screwdriver := new inventory("screwdriver", "small tool", 2)
+; screwdriver.addItems(100)
+; screwdriver.addItems(66)
+; screwdriver.addItems(10)
+; screwdriver.saveStatus()
 
 
-hammer := new inventory("hammer", "small tool", 2)
-screwdriver.addItems(100)
-screwdriver.addItems(66)
-screwdriver.addItems(10)
-screwdriver.saveStatus()
+;hammer := new inventory("hammer", "small tool", 2)
+hammer := new inventory("hammer")
 hammer.savestatus()
+
+^1::
+hammer.input()
 return
+
+
+;;have exitapp call savestatus method rather than always saving after inputting values.
 
 
 class inventory {
@@ -52,4 +55,15 @@ class inventory {
         FileDelete, % this.filePath
         FileAppend, % string, % this.filePath
     }
+    input(){ ;method to add object values via inputbox
+        InputBox, inp
+        if inp = ""
+       {
+        return
+        } else {
+             this.stock += inp 
+        this.saveStatus()
+ 
+    }
+}
 }
