@@ -12,7 +12,7 @@
 ;total()
 
 ;__New(Item,type,ppath := "", unit := 0,price:= 0.00,stock:= 0,source:= "", datepurchased := 00.00.0000){
-    #include P:\app\repos-github\biga.ahk\biga.ahk
+  ;  #include P:\app\repos-github\biga.ahk\biga.ahk
 
 ;powerdriver := new tool("powerdriver","craftsman", "powerdriver", 1 , 100.00, 1, "yokota exchange", 09.10.2022)
 ;powerdriver.addItems(100)
@@ -198,29 +198,9 @@ static frontproject := "c:\tester"
             sum := v
           msgbox, % "the sum of " k " is " sum
         }
-
-print(afile)
-           
-            /*Loop, Parse, contents , `n
-                {
-                temp_arr := StrSplit(a_loopfield, ",") ;StrSplit(String, [Delimiters, OmitChars])
-                afile[temp_arr [1]] := temp_arr[2] ;whatever temp_arr[1] is, becomes the key for afile i.e, afile[notepadLine1] := notepadLine2
-                afile.path := "C:\Users\dkzea\OneDrive\Desktop" . path
-                }
-            return aFile
-                }
-            else 
-                {
-            MsgBox, % "0: `n it didn't read the file, path inside object method trip.readfile() is: " path 
-            , "`n maybe it already exists"
-            return
-                }
-*/
-
-
-            }
-            return
-        }
+    }
+    return
+}
 
 
     showfile(data := "item"){

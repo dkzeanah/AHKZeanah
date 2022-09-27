@@ -1,3 +1,4 @@
+#Requires AutoHotkey v1.1.34+
 #Include class/class_json.ahk
 ;#include export.ahk
 
@@ -8,21 +9,16 @@
 ; screwdriver.saveStatus()
 
 
-;hammer := new inventory("hammer", "small tool", 2)
+
 hammer := new inventory("hammer")
 hammer.savestatus()
 
-<<<<<<< Updated upstream
 ^1::
-hammer.input()
-=======
-1::
 hammer.input()
 return
 ;hammer.savestatus()
 
 
->>>>>>> Stashed changes
 return
 
 
@@ -30,7 +26,7 @@ return
 
 
 class inventory {
-    __New(name, category:="misc", price:=100, stock:=1, source:="") {
+    __New(name, category:="misc", price:=1.00, stock:=1, source:="") {
         ; read from default filepath if none specified
         if (source == "") {
             this.filePath := A_ScriptDir "\" name ".json"
@@ -64,23 +60,15 @@ class inventory {
         FileDelete, % this.filePath
         FileAppend, % string, % this.filePath
     }
-<<<<<<< Updated upstream
     input(){ ;method to add object values via inputbox
         InputBox, inp
-        if inp = ""
-       {
-        return
-        } else {
-             this.stock += inp 
-        this.saveStatus()
- 
-    }
-}
-=======
-    input(){
-        InputBox, inp
+        if inp = """"
+            {
+            return
+            } 
         this.stock += inp 
         this.saveStatus()
-    }
->>>>>>> Stashed changes
+ 
+    
+}
 }
