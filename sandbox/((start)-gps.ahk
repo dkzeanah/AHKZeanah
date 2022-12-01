@@ -1,5 +1,5 @@
 #Requires AutoHotkey v1.1.34.03
-#include P:\app\repos-github\biga.ahk\biga.ahk
+;#include P:\app\repos-github\biga.ahk\biga.ahk
 ;works task := new fp.tool()
 ;#Requires AutoHotkey v1.1.34.03
 

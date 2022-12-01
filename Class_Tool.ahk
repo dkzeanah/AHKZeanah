@@ -21,26 +21,25 @@
 
 screwdriver := new tool("screwdriver","tool")
 screwdriver.givevalues("screws", 100)
-screwdriver.givevalues("screws", 100)
-
-
 
 
 for k,v in screwdriver.item 
+{
+    s .= v "`n"
 msgbox % "[looping] `n" k ":" v
-
-
+}
 
 screwdriver.givevalues("screws", 105)
 
+msgbox, % s "`n this was s"
 
-
-screwdriver.savetofile()
+screwdriver.savetofile(s,this.ppath)
 screwdriver.showfile()
 thisvar := screwdriver.readfile()
 ;screwdriver.check()
 
 
+msgbox % thisvar
 
 
 
@@ -227,9 +226,10 @@ static frontproject := "c:\tester"
         return total
         }
     savetofile(data,ppath := ""){
-
+        msgbox % "saving to file is happening"
         tool.frontproject := this.frontproject
         FileAppend,  % "`n" data . "," . DateTime  , % this.ppath
+        FileAppend,  % "`n" data . "," . DateTime  , % this.filepath
 
         MsgBox, % "0: `n " data
         MsgBox, % "0: `n " this.ppath

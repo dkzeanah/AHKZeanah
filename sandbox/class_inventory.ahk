@@ -1,4 +1,4 @@
-#include class/class_json.ahk
+;#include class/class_json.ahk
 
 
 hammer := new inventory("hammer", "small-tool")
