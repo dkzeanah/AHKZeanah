@@ -1,12 +1,38 @@
 
  
--python from windows store clash with anaconda - 01DD-0104 
--autohotkey get folder dir on a_guievent - 02DD-1721 
-
--02DD-2301 
--autohotkey - 06DD-2105 
-
--s .= k "=" v "`n" autohotkey - 02DD-2001 
+                -python from windows store clash with anaconda - 01DD-0104 
+ - 03DD-0045 
+ active
+ autohotkey get folder dir on a_guievent - 02DD-1721 
+ ClickCount
+ Default] - 02DD-0044 
+ D|U
+ event - 03DD-1920 
+ Filename
+ folder
+ Key [
+ OutputVar
+ question
+ R] - 02DD-2301 
+ R] autohotkey - 06DD-2105 
+ Section
+ Speed
+ WhichButton [
+ X
+ Y
+ Y [
+(my<<16)|mx
+- - 01DD-1958 
+- - 02DD-0054 
+- - 02DD-1520 
+- - 02DD-1650 
+- - 02DD-2108 
+- - 05DD-2059 
+- - 05DD-2100 
+- - 05DD-2101 
+- - 06DD-2010 
+- - 06DD-2253 
+- s .= k "=" v "`n" autohotkey - 02DD-2001 
 -"`n" ahk - 02DD-2002 
 -"`n" in autohotkey loops msgbox - 02DD-2002 
 -%comspec%_autohotkey__1014--1329 
@@ -14,6 +40,24 @@
 -'scriptcs'_is_not_recognized_as_an_internal_or_external_command
 -.1 mm nichrome wire calculator - 02DD-1611 
 -/usr/bin/env: �bash\r�: No such file or directory - 04DD-1905 
+-5  - 01DD-1958 
+-5 - 01DD-2301 
+-777 - 02DD-0108 
+-777 - 02DD-0110 
+-888 - 02DD-0107 
+-999 - 02DD-0105 
+-??????_btt1_??? - 05DD-1641 
+-__ 
+-__0607--1740 
+-__0609--2009 
+-__0629--2019 
+-__0725--1607 
+-__0725--1845 
+-__0816--1245 
+-__0907--1958 
+-__0914--1948 
+-__1014--1329 
+-a picture - 02DD-1648 
 -ackvivitar 757hd  - 01DD-0705 
 -ackvivitar 757hd  - 01DD-0705 34
 -add audio to the end of many mp4 files - 04DD-1956 
@@ -36,6 +80,7 @@
 -ankerwork_does_it_record__0905--0401 
 -ap senna support - 02DD-1327 
 -ate - 02DD-0052 
+-ATKExotics.12.12.30.Nadia.Pariss.Toys.XXx - 04DD-2218 
 -audio_transmitting__0929--2242 
 -auto_added_to_path_if_winget__0909--2150 
 -autohotkey - 02DD-1645 
@@ -143,7 +188,9 @@
 -fault injection - 02DD-2047 
 -fds__05DD-1832 
 -FF0000_hex_color__0607--0042 
-
+-g - 02DD-0054 
+-g - 02DD-0059 
+-g__ 
 -g_up__1107--2017 
 -games in go - 03DD-2103 
 -gankplant_support__0909--2150 
@@ -191,6 +238,7 @@
 -https://www.autohotkey.com/boards/viewtopic.php?f=7&t=41332 - 02DD-1948 
 -https://www.autohotkey.com/boards/viewtopic.php?t=44115 - 01DD-2304 
 -i_put_an_m.2_card_but_wont_detect__1002--2148 
+-id
 -if A_PriorHotkey autohotkey - 02DD-2139 
 -if_winexist_increment_autohotkey__0605--2127 
 -ifautohotkey - 04DD-1811 
@@ -258,6 +306,7 @@
 -npm_ERR!_gyp_ERR!_find_VS_including_the_"Desktop_development_with_C++"_workload.__0606--1856 
 -NuGet - 02DD-0356 
 -obs_setting_to_hide_itself__0609--1842 
+-ok ate its  - 02DD-0051 
 -open_folder_with_sublime_text__1026--0738 
 -orianna_support__0816--1245 
 -OrlandoLat__0720--1937 
@@ -281,6 +330,8 @@
 -python screen capture with gui - 02DD-0414 
 -razer webcam vs logitech c922 - 02DD-0933 
 -razer_synapse_ctrl_shift_p__0614--1925 
+-read - 02DD-1714 
+-really?__1115--1713 
 -really?_donovan_zeanah_github__1115--1713 
 -registry value for hover focus a window windows 11 - 02DD-2131 
 -renata glasc - 02DD-1531 
@@ -294,9 +345,11 @@
 -sandra_wellness__0705--0405 
 -save_this_google_search_to_file
 -saved_google_search__0607--1732 
+-Sayaka_Fukuyama_|__0715--2144 
 -scite4autohotkey patch file - 01DD-1915 
 -screen_as_camera_source_obs__1015--1159 
 -search_again_donovan_zeanah_gh__1115--1716 
+-send
 -send message to notepad without activating it  - 02DD-2206 
 -send_to_word_without_opening_autohotkey__0719--2321 
 -SendMessage
@@ -323,6 +376,33 @@
 -support with highest win rate - 02DD-0309 
 -swain_support__0728--0120 
 -sylas attack speed - 02DD-0833 
+-SysGet
+-t - 02DD-0053 
+-t - 02DD-0231 
+-te__ 
+-te__05DD-0038 
+-teams_off_screen__1004--0308 
+-tes - 02DD-1656 
+-tes - 04DD-1806 
+-test - 01DD-1342 
+-test - 02DD-1625 
+-test - 02DD-1943 
+-test - 02DD-2154 
+-test gain - 01DD-0705 
+-test it yo - 02DD-0226 
+-test this - 05DD-2056 
+-test this ahk - 02DD-0225 
+-test this front folder - 05DD-1659 
+-test__ 
+-test__0629--2218 
+-test__0717--2130 
+-test__0725--1607 
+-test__0731--1017 
+-test__1001--0625 
+-test_autohotkey__ 
+-test_it__0725--2209 
+-test_this - 05DD-2104 
+-tests - 02DD-1633 
 -The_name_'r'_does_not_exist_in_the_c__1004--0308 
 -Top-level_statements_must_precede_name_c#__1004--0308 
 -toshiba_satellite_bios__1004--0308 
@@ -389,9 +469,28 @@
 -wintitlematchmode_autohotkey__0607--1846 
 -WM_SHOWWINDOW_:=_0x0018_autohotkey - 05DD-2331 
 -workforce pro 3820 photo print - 01DD-1915 
+-wow - 02DD-0041 
+-y - 02DD-1656 
 -yone mid weakness - 02DD-0933 
 -You_want_the_members_of_a_class_to_be_accessible_only_to_code_that_is_within_the_same_class.__0718--2251 
 -ZMQ Shared Library not found at - 01DD-1958 
 -ZMQ Shared Library not found at ZNIQ Shared Library not found at c:\users\* - 02DD-1839 
 -zyra_jungle__0821--0548 
+0x84
 _"avicap32.dll")__0808--0544 
+_"str"
+_78__0709--1931 
+__0901--1229 
+____at_render.js:5:9__0718--0154 
+_Cmd
+_ExcludeText]__0702--1941 
+_ExcludeTitle
+_OutputVar_[
+_prime_file_to_receive_answers__0607--1740 
+_VirtualWidth
+_WinText
+_WinTitle
+ahk_id_%mwin%__1022--0658 
+Array*) ahk - 02DD-2047 
+Array1Array2Array3Array4
+id

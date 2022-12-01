@@ -21,9 +21,8 @@ msgbox, % "done: " filteredArray.count() " vs " array.count()
 
 FileRead, OutputVar, output.txt
 Sort, OutputVar, u
-FileDelete, %A_SCRIPTDIR%\textfile.txt
 sleep, 300
-FileAppend, %OutputVar%,%A_SCRIPTDIR%\textfile-completed.txt
+FileAppend, %OutputVar%,%A_SCRIPTDIR%\output-completed.txt
 return
 
 fn_removeSimilar(inputArr, threshold)

@@ -21,7 +21,6 @@ id
 -prosimity - 04DD-2306 
 -vscode should i add anaconda to path  - 04DD-2039 
 -gmail.com - 04DD-2039 
--ATKExotics.12.12.30.Nadia.Pariss.Toys.XXx - 04DD-2218 
 -tes - 04DD-1806 
 -ifautohotkey - 04DD-1811 
 -autohotkey add strings together - 04DD-1845 
@@ -66,7 +65,6 @@ _ExcludeText]__0702--1941
 -using_javascript_with_lamp_server_host_provider__0709--1931 
 -SysGet
 _78__0709--1931 
--Sayaka_Fukuyama_|__0715--2144 
 -test__0717--2130 
 -gist__0717--2133 
 -github_gist__0717--2133 
@@ -435,7 +433,6 @@ _ExcludeText]__0702--1941
 -ceramic max heat - 01DD-1356 34
 -change linux password - 02DD-0933 
 -check directory for file autohotkey - 02DD-1945 
--cleopatra_sinn__0808--1753 
 -click at current cursor location ahk - 02DD-2108 
 -Clipboard := "example.com/$" FileName - 01DD-2332 
 -coderunner_executor_map_autohotkey__0725--1607 
@@ -575,7 +572,6 @@ Array*) ahk - 02DD-2047
 -run python file from explorer - 01DD-1744 
 -run python script manually - 04DD-2025 
 -sandra_wellness__0705--0405 
--Sayaka_Fukuyama_|__0715--2144 
 -scite4autohotkey patch file - 01DD-1915 
 -send message to notepad without activating it  - 02DD-2206 
 -send
@@ -1919,7 +1915,6 @@ id
 
 -sandra_wellness__0705--0405 
 
--Sayaka_Fukuyama_|__0715--2144 
 
 -scite4autohotkey patch file - 01DD-1915 
 
@@ -2515,7 +2510,6 @@ Array*) ahk - 02DD-2047
 
 -sandra_wellness__0705--0405 
 
--Sayaka_Fukuyama_|__0715--2144 
 
 -scite4autohotkey patch file - 01DD-1915 
 
