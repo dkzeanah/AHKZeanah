@@ -1,7 +1,40 @@
 #SingleInstance, force
 
+ar := {"that": "this"}
+ar.that := {"Key1" : "valueA", "KeyLime" : "3.1459"}
+ar.that.valueA := [1,2,3]
+print(st_printArr(ar))
 
-Function(1, 2, 3, 4, 5)
+st_printArr(array, depth=5, indentLevel="")
+{
+    for k, v in Array
+    {
+        list.= indentLevel "[" k "]" ;first start building up each the key names
+        if (IsObject(v) && depth>1) ;is this "end" level? are there more levels?
+            list.="`n" st_printArr(v, depth-1, indentLevel . "    ") ;yep the value is another object so we are not at the end level, start all over one level down this branch
+        Else
+            list.=" -> " v ;we reached the end of one branch! (or the final branch)
+    ; list.="`n"
+        list:=rtrim(list, "`r`n `t") "`n" ;add a tab for the next indent level
+    }
+    return rtrim(list)
+}
+
+
+/*
+for k, v in this.afile {
+            for k,v in v {
+            if (v)
+            sum += v
+            }
+                gui add, text,, % k ": " sum
+        }
+*/
+
+
+
+
+Function(1, 2, 3, 4, 10)
 global wps := .0042 ; rate based on $15.00 / hour (a baseline figure)
 home := new HQ(-33.406346189037116, -87.5944803458756) ;actual coords
 home.Destination("Hardware", -33.23282225918211, -87.61325127705827) ;close-by hardware store coordinates
@@ -56,20 +89,26 @@ esc::exitapp
 
 Function(number, numbers*) {
     for k,v in numbers
+    {
+
+
     MsgBox, % "3: `n " v
    ; numbers == [2, 3, 4, 5]
+   }
    return
 }
 
-class HQ {
+class HQ 
+{
 
     __New(lat, long) {
-;automatically sets the first half of the total needed information for the destination() method upon creation.
-        this.Lat := lat, this.Long := long
+    ;automatically sets the first half of the total needed information for the destination() method upon creation.
+    
+    this.Lat := lat, this.Long := long
     }
 
     Destination(name, lat, long) {
-; names a target locations and receives input for the last half of needed information
+    ; names a target locations and receives input for the last half of needed information
 
         object := this[name] := {name:name}
         static p := 0.017453292519943295  ;1 degree in radian
@@ -81,21 +120,22 @@ class HQ {
         return object.dist := object.miles := Round(object.miles, 2) , object.destination := object.miles := Round(object.miles, 2)
     }
 }
+; get someones thoughts on a conditional extension of a class...? car could in theory extend HQ, but ultimately, 
+; there is no point if the car IS AT the HQ
 
 ;class car extends hq
 class car  {
     static ppg := 5.00 ;price per gallon
-    static mph := 60 ; a practical nominal average
+    static mph := 60 ; a practical nominal average standard use number
 
     __new(mpg, optvar := ""){
         this.mpg := mpg
         this.optvar := optvar
-if (optvar != "") ;should work if optvar passed in
-    {
-        MsgBox, % "6: `n " optvar " `n was infact, true."
-        this.drive(mpg, home.hardware.dist )
-        return this
-    }
+        if (optvar != "") ;should work if optvar passed in
+        {
+            MsgBox, % "6: `n " optvar " `n was passed in, therefore: " this.drive(mpg, optvar )
+            return this
+        }
     MsgBox, % "2: `n " home.destination
     return this
 }
@@ -112,14 +152,14 @@ if (optvar != "") ;should work if optvar passed in
         ;2nd; result := round((gasamount * this.ppg) + timeamount , 2)
         timeamountincash := round( timeamount * wps , 2)
         result := this.twoway((gasamount * this.ppg ) + timeamountincash )
-        MsgBox, % "8: `n " result
+        MsgBox, % "8: result of a two way trip in both gas and time accounted for `n " result
         return result
         ;worked; return this.twoway(result) ;.round(result, 2)
 
 
 }        
     twoway(result){
-        MsgBox, % "9: initial result `n " this.result := result
+        MsgBox, % "9: resultant price of a twoway trip `n " this.result := result
             result := result * 2
             return result
 

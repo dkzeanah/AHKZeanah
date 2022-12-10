@@ -165,7 +165,7 @@ for k, v in this.Afile
 
 }
 
-print(this.afile.sum)
+;print(this.afile.sum)
 return this.afile
         }
     }
