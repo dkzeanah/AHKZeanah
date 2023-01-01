@@ -35,7 +35,7 @@ class gui2 extends gui {
     }
 }
 
-g := gui2.New(,"Test Gui")
+g := gui2() ; (,"Test Gui")
 OnMessage(0x200,g.msg) ; WM_MOUSEMOVE
 OnMessage(0x201,g) ; WM_LBUTTONDOWN
 OnMessage(0x202,g) ; WM_LBUTTONUP
@@ -48,7 +48,8 @@ g.Add("Edit","vMyEdit4 ReadOnly w200 h100")
 g.Show()
 
 F2:: {
-    txt := "test method:            " g.test() "`r`n"
+    txt :=  new g
+	MsgBox(txt, testtitle)
     txt .= "test property:           " g.test2 "`r`n"
     txt .= "super class name:    " g.test3
     msgbox txt

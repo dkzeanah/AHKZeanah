@@ -177,32 +177,32 @@ return this.afile
         }
           for k, v in this.afile {
             if (v)
-                gui add, text,, % k ": " v
+                gui, add, text,, % k ": " v
+                ;gui show,, 
         }
-        ;this.data := data
-        ; for k,v in this.data
-        ; {
-        ;     if (isobject(v)){
-        ;     for k,v in v
-        ;     {
-        ;     this.items.k .= v
-        ;     this.items.k.total += v
-
-
-        ;     }
-        ;     }
-        ;     for k,v in A_LoopField
-        ;     MsgBox, % "4: `n " k "-" v
+        this.data := data
+         for k,v in this.data
+        {
+             if (isobject(v)){
+             for k,v in v
+             {
+             this.items.k .= v
+             this.items.k.total += v             
+             }
+        gui, add, text, % v          
+        }             
+        for k,v in A_LoopField
+        MsgBox, % "4: `n " k "-" v
 
            
-        ; }
-        ;Gui,+AlwaysOnTop ;Sets the Gui as forward priority in the window hierarchy.
-        ;Gui, Color, 000000 ;Sets the Gui color to black
-        ;Gui, +Delimiterspace
-        ;Gui, Add, edit,, %sum%
+         }
+        Gui,+AlwaysOnTop ;Sets the Gui as forward priority in the window hierarchy.
+       ; Gui, Color, 000000 ;Sets the Gui color to black
+       ; Gui, +Delimiterspace
+       ;; Gui, Add, edit,, %sum%
         ;Gui, Add, edit,, %eachvalue%
         ;Gui, Add, Button, x5 y370 w290 gSaveExit, Save and Exit
-        ;Gui, Show
+        Gui, Show
 
         ;saveexit:
         ;msgbox % "press ok to exit"

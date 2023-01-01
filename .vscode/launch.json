@@ -10,6 +10,7 @@
             "name": "AutoHotkey Debugger",
             "program": "${file}",
             "stopOnEntry": true
+            "runtime": "C:\\Program Files\\AutoHotkey\\launcher.exe"
         }
     
     ]
