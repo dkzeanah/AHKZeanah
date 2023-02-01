@@ -1,12 +1,6 @@
 ;#include class/class_json.ahk
 
 
-hammer := new inventory("hammer", "small-tool")
-hammer.saveStatus()
-MsgBox, % "0: `n " hammer.stock 
-return
-
-
 class inventory {
     __New(name, category:="misc", price:=100, stock:=0, source:="") {
         ; read from default filepath if none specified
