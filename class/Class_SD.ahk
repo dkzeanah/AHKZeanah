@@ -1,3 +1,4 @@
+#Requires Autohotkey v1.1.33+
 Class SD {
     __New() {
        

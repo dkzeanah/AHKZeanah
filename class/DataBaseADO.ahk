@@ -1,4 +1,5 @@
-﻿;namespace DBA
+#Requires Autohotkey v1.1.33+
+;namespace DBA
 
 /*
 	Represents a Connection to a ADO Database

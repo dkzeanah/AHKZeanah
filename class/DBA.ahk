@@ -1,4 +1,5 @@
-﻿/*
+#Requires Autohotkey v1.1.33+
+/*
 	DataBase NameSpace Import
 */
 
